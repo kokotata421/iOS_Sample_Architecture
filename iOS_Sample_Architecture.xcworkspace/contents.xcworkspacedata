@@ -4,4 +4,7 @@
    <FileRef
       location = "group:UIKit_Sample_Architecture/UIKit_Sample_Architecture.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:UIKit_Sample_Architecture/../SwiftUI_Sample_Architecture/SwiftUI_Sample_Architecture.xcodeproj">
+   </FileRef>
 </Workspace>
