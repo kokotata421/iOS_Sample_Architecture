@@ -1,0 +1,34 @@
+name: iOS starter workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle install
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - name: Xcode build
+        run: set -o pipefail &&
+          xcodebuild
+          -sdk iphonesimulator
+          -configuration Debug
+          -workspace iOS_Sample_Architecture.xcworkspace
+          -scheme UIKit_Sample_Architecture
+          build
+          | bundle exec xcpretty
