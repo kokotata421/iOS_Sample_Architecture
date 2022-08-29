@@ -22,4 +22,4 @@ jobs:
           -workspace iOS_Sample_Architecture.xcworkspace
           -scheme UIKit_Sample_Architecture
           build
-          | bundle exec xcpretty
+          
