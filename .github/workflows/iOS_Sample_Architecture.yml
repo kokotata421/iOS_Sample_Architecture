@@ -26,10 +26,5 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Xcode build
         run: set -o pipefail &&
-          xcodebuild
-          -sdk iphonesimulator
-          -configuration Debug
-          -workspace iOS_Sample_Architecture.xcworkspace
-          -scheme UIKit_Sample_Architecture
-          build
+          bundle exec fastlane build
           
