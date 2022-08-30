@@ -26,5 +26,5 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Xcode build
         run: set -o pipefail &&
-          bundle exec fastlane build --verbose
+          bundle exec fastlane build
           
