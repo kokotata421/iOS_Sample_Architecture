@@ -17,7 +17,12 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  lane :build do
+    gym(
+      workspace: "iOS_Sample_Architecture.xcworkspace",
+      configuration: "Debug",
+      scheme: "UIKit_Sample_Architecture",   # specify the name of the .ipa file to generate (including file extension)
+      sdk: "iphonesimulator"        # use SDK as the name or path of the base SDK when building the project.
+    )
   end
 end
