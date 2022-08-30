@@ -22,7 +22,8 @@ platform :ios do
       workspace: "iOS_Sample_Architecture.xcworkspace",
       configuration: "Debug",
       scheme: "UIKit_Sample_Architecture",   # specify the name of the .ipa file to generate (including file extension)
-      sdk: "iphonesimulator"        # use SDK as the name or path of the base SDK when building the project.
+      sdk: "iphonesimulator",
+      skip_archive: true # use SDK as the name or path of the base SDK when building the project.
     )
   end
 end
