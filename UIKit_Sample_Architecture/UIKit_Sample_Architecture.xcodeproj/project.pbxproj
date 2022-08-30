@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53EBC0928BE3A94005775F0 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53EBC0828BE3A94005775F0 /* SnapshotHelper.swift */; };
 		E5F97B0928BD1C0900E5B379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F97B0828BD1C0900E5B379 /* AppDelegate.swift */; };
 		E5F97B0B28BD1C0900E5B379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F97B0A28BD1C0900E5B379 /* SceneDelegate.swift */; };
 		E5F97B0D28BD1C0900E5B379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F97B0C28BD1C0900E5B379 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E53EBC0828BE3A94005775F0 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../../fastlane/SnapshotHelper.swift; sourceTree = "<group>"; };
 		E5F97B0528BD1C0900E5B379 /* UIKit_Sample_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit_Sample_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F97B0828BD1C0900E5B379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F97B0A28BD1C0900E5B379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		E5F97B2828BD1C0A00E5B379 /* UIKit_Sample_ArchitectureUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E53EBC0828BE3A94005775F0 /* SnapshotHelper.swift */,
 				E5F97B2928BD1C0A00E5B379 /* UIKit_Sample_ArchitectureUITests.swift */,
 				E5F97B2B28BD1C0A00E5B379 /* UIKit_Sample_ArchitectureUITestsLaunchTests.swift */,
 			);
@@ -278,6 +281,7 @@
 			files = (
 				E5F97B2C28BD1C0A00E5B379 /* UIKit_Sample_ArchitectureUITestsLaunchTests.swift in Sources */,
 				E5F97B2A28BD1C0A00E5B379 /* UIKit_Sample_ArchitectureUITests.swift in Sources */,
+				E53EBC0928BE3A94005775F0 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
