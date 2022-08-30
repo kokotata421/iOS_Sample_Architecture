@@ -27,4 +27,8 @@ jobs:
       - name: Xcode build
         run: set -o pipefail &&
           bundle exec fastlane build --verbose
+      - uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: build/reports
           
