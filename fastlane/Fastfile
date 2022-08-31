@@ -23,7 +23,7 @@ platform :ios do
       configuration: "Debug",
       scheme: "UIKit_Sample_Architecture",   # specify the name of the .ipa file to generate (including file extension)
       sdk: "iphonesimulator",
-      skip_archive: true # use SDK as the name or path of the base SDK when building the project.
+      skip_codesigning: true # use SDK as the name or path of the base SDK when building the project.
     )
   end
 end
